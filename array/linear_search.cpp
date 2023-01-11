@@ -1,7 +1,8 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 
-int linear_search(vector<int> a[] , int x , int sixe){
+int linear_search(int a[], int x , int size){
     int j = -1;
     
     for(int y=0 ; y<size ; y++){
@@ -27,7 +28,7 @@ int main(){
     cout<<"\nenter the value of elemet to search in array : ";
     cin>>x;
 
-    int c = linear_search(arr, x);
+    int c = linear_search(arr, x , size);
 
     if(c == -1){
         cout<<"\n element not found";
@@ -36,8 +37,6 @@ int main(){
     else{
         cout<<"\nelment found";
     }
-
-    
 
     return 0;
 }
